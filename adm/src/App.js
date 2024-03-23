@@ -1,12 +1,17 @@
 import './App.css';
 import React from 'react';
+import Header from './components/Header'
+import Footer from './components/Footer'
 function App() {
   return (
     <>
-    <h1 className='text-center'>Hello ADM</h1>
+    <div>
+    <Header />
+    <Footer />
+    </div>
     </>
       
       )
 }
-
 export default App;
+
