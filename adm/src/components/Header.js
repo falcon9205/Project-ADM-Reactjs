@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineDarkMode } from "react-icons/md";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [darkbutton,setdarkbutton] = useState(false)
   const [background,setbackground] = useState('bg-neutral-700')
   const [textColour,setTextColour] = useState('gray-400')
-
+  const width = window.screen.width
   const changebackground = ()=>{
       if(background === 'bg-neutral-700')
         {
@@ -16,7 +17,11 @@ const Navbar = () => {
         setTextColour('gray-400')
       }
   }
-
+  useEffect(()=>{
+    if(window.screen.width<1024)
+       setdarkbutton(true)
+  },[window.screen.width])
+  console.log(width);
 
   return (
     <>
@@ -60,19 +65,18 @@ const Navbar = () => {
                     !open && "hidden"
                   } dark:bg-${background} `}
                 >
-                  <ul className={`block lg:flex text-${textColour}`}>
+                  <ul className={`block lg:flex text-${textColour} `}>
                     <ListItem NavLink="/#">Home</ListItem>
                     <ListItem NavLink="/#">Photogallery</ListItem>
                     <ListItem NavLink="/#">Internships</ListItem>
                     <ListItem NavLink="/#">Contact-us</ListItem>
-                    <ListItem NavLink="/#">Sign-In</ListItem>
-                    <ListItem NavLink="/#">Sign-Up</ListItem>
+                    
                   </ul>
                   
                 </nav>
               </div>
 
-              {(open===true) && 
+              {(darkbutton===true) && 
               <div className='text-sm  mt-1'>
              <img
                   src="https://i.postimg.cc/4NsbbWmp/night-mode.png"
@@ -86,18 +90,28 @@ const Navbar = () => {
         }
 
               <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
+               
+                {(darkbutton===false) && <>
+                <a href="/#"
+                  className="px-7 py-3 text-base font-medium text-dark hover:text-primary text-gray-400 bg-transparent">
+                    <img
+                  src="https://i.postimg.cc/4NsbbWmp/night-mode.png"
+                  width="25px"
+                  height="25px"
+                  alt="dark button"
+                  className=" bg-slate-50 rounded-full"
+                  onClick={changebackground}
+                />
+                </a>  
+                
+                </>
+
+                }
               <a
                   href="/#"
                   className="px-7 py-3 text-base font-medium text-dark hover:text-primary text-gray-400 bg-transparent"
                 >
-                 <img
-                  src="https://i.postimg.cc/4NsbbWmp/night-mode.png"
-                  width="25px"
-                  height="25px"
-                  alt="logo"
-                  className="hidden dark:block bg-slate-50 rounded-2xl"
-                  onClick={changebackground}
-                />
+                  
                 </a>
                 <a
                   href="/#"
@@ -129,7 +143,7 @@ const ListItem = ({ children, NavLink }) => {
       <li>
         <a
           href={NavLink}
-          className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex"
+          className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-gray-600 lg:ml-12 lg:inline-flex "
         >
           {children}
         </a>
