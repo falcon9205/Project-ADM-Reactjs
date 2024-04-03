@@ -23,7 +23,6 @@ const Home = () => {
   const launch4 = ()=>{
     swal.fire(pop4)
   }
-  
   return (
     <>
       <div className="w-full">
