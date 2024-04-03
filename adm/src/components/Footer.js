@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-gray-500 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left ">
+       <footer className="bg-gray-500 text-center text-surface/75 dark:bg-gray-300 dark:text-black lg:text-left font-se">
         <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-gray-400 lg:justify-between">
-          <div className="me-12 hidden lg:block">
+          <div className="me-12 hidden lg:block font-semibold">
             <span>Get connected with us on social networks :</span>
           </div>
 
@@ -50,55 +50,67 @@ const Footer = () => {
             
           </div>
         </div>
-
+ 
+ {/*About us   */}
         <div className="mx-6 py-10 text-center md:text-left">
           <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="">
               <h6 className="mb-4 flex items-center justify-center font-bold uppercase md:justify-start">
                 <span className="me-3 [&>svg]:h-4 [&>svg]:w-4">
-                  
                 </span>
                 About Us
               </h6>
-              <p className="font-extralight">
+              <p className="font-semibold">
               "Belief is the cornerstone of every endeavor, and NGOs stand as living testaments to the power of belief in action. They are born from the conviction that a better world is not just a dream but an achievable reality"
               </p>
             </div>
 
+{/* Opening Hours */}
             <div>
               <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
-                Opening Hours
+                Opening hours
               </h6>
-              <p className="mb-4 font-extralight">
-                Monday-Thrusday [9:00AM-6:00PM]
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                Monday-Thursday [9:00AM-6:00PM]
               </p>
-              <p className="mb-4 font-extralight">
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
                 Friday [9:00AM-5:00PM]
               </p>
-             
             </div>
 
+
+            {/* <div>
+              <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
+                Our branches
+              </h6>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://www.google.com/maps/place/Sector+14,+Gurugram,+Haryana+122022/@28.47258,77.044489,12z/data=!4m6!3m5!1s0x390d19b2668b71e3:0xe4ba6a0849b01c0a!8m2!3d28.4710811!4d77.0454144!16s%2Fg%2F1tgwl1z5?hl=en&entry=ttu" >Gurugram</a>
+              </p>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                Friday [9:00AM-5:00PM]
+              </p>
+            </div> */}
             <div>
               <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
                 Our Branches
               </h6>
-              <p className="mb-4 font-extralight">
-                <a href="https://www.google.com/maps/place/Sector+14,+Gurugram,+Haryana+122022/@28.47258,77.044489,12z/data=!4m6!3m5!1s0x390d19b2668b71e3:0xe4ba6a0849b01c0a!8m2!3d28.4710811!4d77.0454144!16s%2Fg%2F1tgwl1z5?hl=en&entry=ttu" >Gurugram</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://www.google.com/maps/place/Sector+14,+Gurugram,+Haryana+122022/@28.47258,77.044489,12z/data=!4m6!3m5!1s0x390d19b2668b71e3:0xe4ba6a0849b01c0a!8m2!3d28.4710811!4d77.0454144!16s%2Fg%2F1tgwl1z5?hl=en&entry=ttu"  target="_blank" rel="noreferrer">Gurugram</a>
               </p>
-              <p className="mb-4 font-extralight">
-                <a href="https://www.google.com/maps?ll=28.885287,76.614584&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=5440698255477377477">Rohtak</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://www.google.com/maps?ll=28.885287,76.614584&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=5440698255477377477" target="_blank" rel="noreferrer">Rohtak</a>
               </p>
-              <p className="mb-4 font-extralight">
-                <a href="https://www.google.com/maps?ll=28.711293,77.11997&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=8940567371804577553">Rohini</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://www.google.com/maps?ll=28.711293,77.11997&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=8940567371804577553" target="_blank" rel="noreferrer">Rohini</a>
               </p>
-              <p className="mb-4 font-extralight">
-                <a href="#!">Bahadurgarh</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://maps.app.goo.gl/ABUFGtSuMeHvyhX78" target="_blank" rel="noreferrer">Bahadurgarh</a>
               </p>
-              <p className="mb-4 font-extralight">
-                <a href="#!">Tahana</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://maps.app.goo.gl/5Rk7mTYw2tt1g44i7" target="_blank" rel="noreferrer">Farukh Nagar</a>
               </p>
-              <p className="mb-4 font-extralight">
-                <a href="#!">Jhajjar</a>
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
+                <a href="https://maps.app.goo.gl/QedXrAyPx75LZAFn9" target="_blank" rel="noreferrer">Jhajjar</a>
               </p>
             </div>
 
@@ -106,7 +118,7 @@ const Footer = () => {
               <h6 className="mb-4 flex justify-center font-bold uppercase md:justify-start">
                 Contact
               </h6>
-              <p className="mb-4 flex items-center justify-center md:justify-start font-extralight">
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +131,7 @@ const Footer = () => {
                 </span>
                  <a href="https://www.google.com/maps?ll=28.885287,76.614584&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=5440698255477377477" >Rohtak [Head Office]</a>
               </p>
-              <p className="mb-4 flex items-center justify-center md:justify-start font-extralight">
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +145,7 @@ const Footer = () => {
                 <button onClick={() => window.location = 'info@admedusociety.org'} >info@admedusociety.org</button>
 
               </p>
-              <p className="mb-4 flex items-center justify-center md:justify-start font-extralight">
+              <p className="mb-4 flex items-center justify-center md:justify-start font-semibold">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +161,7 @@ const Footer = () => {
                 </span>
                 +91 9671457366
               </p>
-              <p className="flex items-center justify-center md:justify-start font-extralight">
+              <p className="flex items-center justify-center md:justify-start font-semibold">
                 <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
