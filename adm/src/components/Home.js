@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import swal from "sweetalert2";
 import Carousel from "react-bootstrap/Carousel";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   const pop1 =
@@ -22,7 +23,7 @@ const Home = () => {
   const launch2 = () => {
     swal.fire(pop2);
   };
-  const launch3  = () => {
+  const launch3 = () => {
     swal.fire(pop3);
   };
   const launch4 = () => {
@@ -30,57 +31,114 @@ const Home = () => {
   };
   return (
     <>
-      {/* homepage corousel */}
-      <Carousel>
-        <Carousel.Item style={{ height: "50%" }}>
-          <img src="./HomeGalleryImages/medical2.jpg" alt="first " />
-          <Carousel.Caption>
-            <h3 className="font-extrabold text-2xl   text-black">Medical Camp</h3 >
-            <p className="font-bold text-black">Your health is your wealth. Join us at our medical camp to take charge of your well-being.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <div
+        className="h-screen w-full sm:text-4xl font-bold sm:font-extrabold p-10 text-white/75 font-mono text-center"
+        style={{
+          backgroundImage: `url("https://rare-gallery.com/uploads/posts/545420-begging-child.jpg")`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          borderRadius: '20px',
+          marginTop:'1px',
+          marginBottom:'1px',
+          
+        }}
+      >
+        <TypeAnimation
+          sequence={[
+            "Together, we can make a difference.",
+            1000,
+            "Be the change you wish to see in the world.",
+            1000,
+            "Join hands for a better tomorrow.",
+            1000,
+            "Every person counts, every action matters.",
+            1000,
+            "Uniting for a cause, making an impact.",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+        />
+      </div>
 
-        <Carousel.Item style={{ height: "50%" }}>
-          <img src="./HomeGalleryImages/medical3.jpg" alt="second " />
-          <Carousel.Caption>
-            <h3 className="font-extrabold text-2xl  text-black">Medical Camp</h3 >
-            <p className="font-bold text-black">Together, let's fight diseases and promote wellness. Join us at our medical camp and take the first step towards a healthier lifestyle.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <div className="rounded-2xl sm:p-10 p-3 bg-black">
+        <Carousel>
+          <Carousel.Item style={{ height: "50%" }}>
+            <img src="./HomeGalleryImages/medical2.jpg" alt="first " />
+            <Carousel.Caption>
+              <h3 className="font-extrabold text-2xl   text-black">
+                Medical Camp
+              </h3>
+              {/* <p className="font-bold text-black">
+                Your health is your wealth. Join us at our medical camp to take
+                charge of your well-being.
+              </p> */}
+            </Carousel.Caption>
+          </Carousel.Item>
 
-        <Carousel.Item style={{ height: "50%", objectFit: "contain" }}>
-          <img src="./HomeGalleryImages/medical5.jpg" alt="third " />
-          <Carousel.Caption>
-            <h3 className="font-extrabold text-2xl  text-black">Medical Camp</h3 >
-            <p className="font-bold text-black">
-            Your health matters. Join us at our medical camp and prioritize your well-being.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+          <Carousel.Item style={{ height: "50%" }}>
+            <img src="./HomeGalleryImages/medical3.jpg" alt="second " />
+            <Carousel.Caption>
+              <h3 className="font-extrabold text-2xl  text-black">
+                Medical Camp
+              </h3>
+              {/* <p className="font-bold text-black">
+                Together, let's fight diseases and promote wellness. Join us at
+                our medical camp and take the first step towards a healthier
+                lifestyle.
+              </p> */}
+            </Carousel.Caption>
+          </Carousel.Item>
 
-        <Carousel.Item style={{ height: "50%" }}>
-          <img src="./HomeGalleryImages/plantation2.jpg" alt="fourth " />
-          <Carousel.Caption>
-            <h3 className="font-extrabold text-2xl  text-black">Plantation Drive</h3 >
-            <p className="font-bold text-black">A society grows great when old men plant trees whose shade they know they shall never sit in.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+          <Carousel.Item style={{ height: "50%", objectFit: "contain" }}>
+            <img src="./HomeGalleryImages/medical5.jpg" alt="third " />
+            <Carousel.Caption>
+              <h3 className="font-extrabold text-2xl  text-black">
+                Medical Camp
+              </h3>
+              {/* <p className="font-bold text-black">
+                Your health matters. Join us at our medical camp and prioritize
+                your well-being.
+              </p> */}
+            </Carousel.Caption>
+          </Carousel.Item>
 
-        <Carousel.Item style={{height:'50%'}}>
-        <img src="./HomeGalleryImages/plantation5.jpg"  alt="fifth "/>
-        <Carousel.Caption>
-          <h3 className="font-extrabold text-2xl  text-black">Plantation Drive</h3 >
-          <p className="font-bold text-black">Trees exhale for us so that we can inhale them to stay alive. Can we ever forget that? Let us love trees with every breath we take until we perish.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      </Carousel>
+          <Carousel.Item style={{ height: "50%" }}>
+            <img src="./HomeGalleryImages/plantation2.jpg" alt="fourth " />
+            <Carousel.Caption>
+              <h3 className="font-extrabold text-2xl  text-black">
+                Plantation Drive
+              </h3>
+              {/* <p className="font-bold text-black">
+                A society grows great when old men plant trees whose shade they
+                know they shall never sit in.
+              </p> */}
+            </Carousel.Caption>
+          </Carousel.Item>
 
-      <div className="w-full">
+          <Carousel.Item style={{ height: "50%" }}>
+            <img src="./HomeGalleryImages/plantation5.jpg" alt="fifth " />
+            <Carousel.Caption>
+              <h3 className="font-extrabold text-2xl  text-black">
+                Plantation Drive
+              </h3>
+              {/* <p className="font-bold text-black">
+                Trees exhale for us so that we can inhale them to stay alive.
+                Can we ever forget that? Let us love trees with every breath we
+                take until we perish.
+              </p> */}
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+
+      <div >
         {/* Moving content upcoming events */}
         <Marquee
           direction="right"
           speed={200}
-          className="bg-pink-700 text-yellow-300"
+          className="bg-pink-700 text-yellow-300 rounded-2xl"
           pauseOnHover
           style={{ height: 40 }}
         >
@@ -88,7 +146,7 @@ const Home = () => {
         </Marquee>
 
         {/* upcoming events holder div */}
-        <div className="sm:flex gap-4 w-full  p-2 bg-black">
+        <div className="sm:flex gap-4 w-full  p-2 bg-black justify-center rounded-2xl">
           <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 m-4">
             <img
               className="rounded-t-lg h-auto overflow-hidden w-full"
@@ -142,13 +200,14 @@ const Home = () => {
                 Medical Awarness
               </p>
               <button
-                onClick={launch3 }
+                onClick={launch3}
                 className="bg-blue-600 rounded-md p-1 border-black"
               >
                 Read More
               </button>
             </div>
           </div>
+
           <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 m-4">
             <a href="/">
               <img
