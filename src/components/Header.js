@@ -43,7 +43,7 @@ function Header() {
             <NavLink to="/" className="text-white/75">HOME</NavLink>
             <NavLink to="/Internship">INTERNSHIPS</NavLink>
             <NavLink to="/PhotoGallery">PHOTOGALLERY</NavLink>
-            {/* <NavLink to="/Contact">CONTACT-US</NavLink> */}
+            <NavLink to="/Contactus">CONTACT-US</NavLink>
             <button className="bg-blue-600 px-3">LOGIN</button>
             
           </Nav>
