@@ -9,7 +9,7 @@ function Header() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary dark:bg-gray-300 light:bg-white"
+      className="bg-body-tertiary dark:bg-gray-300 light:bg-white rounded-3xl"
     >
       <Container className="font-semibold">
         <Navbar.Brand href="#home">
