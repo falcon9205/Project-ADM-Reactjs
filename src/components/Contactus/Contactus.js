@@ -7,7 +7,7 @@ import './ContactForm.css'
 
 function Contact() {
   return (
-    <div className="contact mt-1 mb-3 w-full">
+    <div className="contact mt-1 mb-3 py-3 w-full">
       {/* <span className="big-circle"></span> */}
       <div className="form">
         <div className="contact-info">
