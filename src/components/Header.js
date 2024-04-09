@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
-import {NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 function Header() {
   return (
     <Navbar
@@ -13,14 +13,14 @@ function Header() {
     >
       <Container className="font-semibold">
         <Navbar.Brand href="#home">
-          
+          <Link href="./Home/Home">
           <img
             src="https://www.admedusociety.org/adm.png"
             width="50px"
             height="50px"
             alt="logo"
             className="hidden dark:block light:block bg-white  rounded-2xl "
-          />
+          /></Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-white/75">
