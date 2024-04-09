@@ -1,0 +1,88 @@
+/* *{
+  textcolor: black;
+} */
+
+.title{
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius:20px ;
+    
+}
+.para{
+    
+    margin-bottom: 5vh;
+}
+
+.cards{
+    max-height: 100px;
+    
+}
+
+
+.card-img{
+    width: 80%;
+    margin: 0 auto;
+    padding-top:40px;
+    
+
+}
+
+.card-desc{
+    display: inline-block;
+    word-break: break-all;
+}
+
+.footer-text{
+    border-radius:20px ;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    
+  
+}
+
+.patta{
+    max-width: 400px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-wrap:balance;
+    font-size: 15px;
+}
+
+/* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+       */
+
+       @keyframes moveUp {
+        0% {
+          transform: translateY(-10);
+        }
+        50% {
+          transform: translateY(+10px); /* Move up by 10px */
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      
+      .card-animation {
+        animation: moveUp 0.5s ease-in-out; /* Adjust animation duration and timing function as needed */
+       
+      }
+      
+
+    .card-animation:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+  

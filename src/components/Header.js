@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
-
+import {NavLink} from "react-router-dom"
 function Header() {
   return (
     <Navbar
@@ -25,8 +25,8 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-white/75">
           <Nav className="me-auto">
-            {/*<Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            {/*<NavLink href="#features">Features</NavLink>
+            <NavLink href="#pricing">Pricing</NavLink>
              <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -39,11 +39,11 @@ function Header() {
               </NavDropdown.Item>
             </NavDropdown> */}
           </Nav>
-          <Nav className="text-white">
-            <Nav.Link href="#deets" className="text-white/75">HOME</Nav.Link>
-            <Nav.Link href="#deets">INTERNSHIPS</Nav.Link>
-            <Nav.Link href="#deets">PHOTOGALLERY</Nav.Link>
-            <Nav.Link href="#deets">CONTACT-US</Nav.Link>
+          <Nav className="text-white gap-3">
+            <NavLink to="/" className="text-white/75">HOME</NavLink>
+            <NavLink to="/Internship">INTERNSHIPS</NavLink>
+            <NavLink to="/PhotoGallery">PHOTOGALLERY</NavLink>
+            {/* <NavLink to="/Contact">CONTACT-US</NavLink> */}
             <button className="bg-blue-600 px-3">LOGIN</button>
             
           </Nav>
