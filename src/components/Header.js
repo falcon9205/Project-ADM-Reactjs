@@ -9,7 +9,7 @@ function Header() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="bg-body-tertiary dark:bg-gray-300 light:bg-white rounded-3xl"
+      className="bg-body-tertiary bg-gray-700 light:bg-white "
     >
       <Container className="font-semibold">
         <Navbar.Brand href="#home">
@@ -44,7 +44,7 @@ function Header() {
             <NavLink to="/Internship">INTERNSHIPS</NavLink>
             <NavLink to="/PhotoGallery">PHOTOGALLERY</NavLink>
             <NavLink to="/Contactus">CONTACT-US</NavLink>
-            <button className="bg-blue-600 px-3">LOGIN</button>
+            <button className="bg-blue-600 px-3 rounded-lg ">LOGIN</button>
             
           </Nav>
         </Navbar.Collapse>

@@ -37,10 +37,6 @@ const Home = () => {
           backgroundImage: `url("https://rare-gallery.com/uploads/posts/545420-begging-child.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          borderRadius: '20px',
-          marginTop:'1px',
-          marginBottom:'1px',
-          
         }}
       >
         <TypeAnimation
@@ -62,7 +58,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="rounded-2xl sm:p-10 p-3 bg-black">
+      <div className=" sm:p-10 p-3 bg-black">
         <Carousel>
           <Carousel.Item style={{ height: "50%" }}>
             <img src="./HomeGalleryImages/medical2.jpg" alt="first " />
@@ -138,7 +134,7 @@ const Home = () => {
         <Marquee
           direction="right"
           speed={200}
-          className="bg-pink-700 text-yellow-300 rounded-2xl"
+          className="bg-pink-700 text-yellow-300 "
           pauseOnHover
           style={{ height: 40 }}
         >
@@ -146,8 +142,8 @@ const Home = () => {
         </Marquee>
 
         {/* upcoming events holder div */}
-        <div className="sm:flex gap-4 w-full  p-2 bg-black justify-center rounded-2xl">
-          <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 m-4">
+        <div className="sm:flex gap-4 w-full  p-2 bg-black justify-center ">
+          <div className="max-w-sm rounded-lg bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4">
             <img
               className="rounded-t-lg h-auto overflow-hidden w-full"
               src="./Upcoming_Events_Photos/imglogo.png"
@@ -155,7 +151,7 @@ const Home = () => {
             />
 
             <div className="p-5 ">
-              <p className="mb-3  text-gray-700 font-extrabold text-2xl  text-lg dark:text-black">
+              <p className="mb-3  text-gray-700 font-extrabold text-lg  dark:text-black">
                 TB Awarness Camp
               </p>
               <button
@@ -166,7 +162,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-2xl">
+          <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
             <img
               className="rounded-t-lg h-auto overflow-hidden w-full"
               src="./Upcoming_Events_Photos/eye.png"
@@ -174,8 +170,8 @@ const Home = () => {
             />
 
             <div className="p-5">
-              <a href="/"></a>
-              <p className="mb-3  font-extrabold text-2xl  text-lg text-gray-700 dark:text-black">
+              
+              <p className="mb-3  font-extrabold  text-lg text-gray-700 dark:text-black">
                 Eye Checking Camp
               </p>
               <button
@@ -187,7 +183,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 m-4">
+          <div className="max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
             <img
               className="rounded-t-lg h-auto overflow-hidden w-full"
               src="./Upcoming_Events_Photos/medical_awareness.png"
@@ -195,8 +191,8 @@ const Home = () => {
             />
 
             <div className="p-5">
-              <a href="/"></a>
-              <p className="mb-3  font-extrabold text-2xl  text-lg text-gray-700 dark:text-black">
+              
+              <p className="mb-3  font-extrabold text-lg text-gray-700 dark:text-black">
                 Medical Awarness
               </p>
               <button
@@ -208,17 +204,17 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="max-w-sm bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 m-4">
-            <a href="/">
+          <div className="max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
+           
               <img
                 className="rounded-t-lg h-auto overflow-hidden w-full"
                 src="./Upcoming_Events_Photos/women_empowerment.png"
                 alt="women empowerment"
               />
-            </a>
+           
             <div className="p-5">
-              <a href="/"></a>
-              <p className="mb-3  font-extrabold text-2xl  text-lg text-gray-700 dark:text-black">
+             
+              <p className="mb-3  font-extrabold text-lg text-gray-700 dark:text-black">
                 Women's Empowerment
               </p>
               <button
