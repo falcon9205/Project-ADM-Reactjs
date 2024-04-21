@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./PhotoGallery.css";
 import image1 from "./imagegallery/medical-camp1.png";
 import image2 from "./imagegallery/medical-camp2.png";
@@ -18,7 +17,6 @@ import image14 from "./imagegallery/planting-camp3.png";
 import image15 from "./imagegallery/planting-camp4.png";
 import image16 from "./imagegallery/western-visa.png";
 import PhotoGalleryData from "./PhotoGalleryData";
-// import Hero from "./Hero";
 import Main from "./Main";
 
 const PhotoGallery = () => {

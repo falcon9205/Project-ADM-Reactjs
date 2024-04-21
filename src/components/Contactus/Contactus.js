@@ -1,14 +1,10 @@
 import React from 'react';
 import './ContactForm.css'
 
-// import LocationImage from '../../assests/location.png';
-// import EmailImage from '../../assests/email.png';
-// import PhoneImage from '../../assests/phone.png';
 
 function Contact() {
   return (
     <div className="contact mt-1 mb-3 py-3 w-full">
-      {/* <span className="big-circle"></span> */}
       <div className="form">
         <div className="contact-info">
           <h3 className="title">Let's get in touch</h3>

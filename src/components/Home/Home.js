@@ -66,10 +66,6 @@ const Home = () => {
               <h3 className="font-extrabold text-2xl   text-black">
                 Medical Camp
               </h3>
-              {/* <p className="font-bold text-black">
-                Your health is your wealth. Join us at our medical camp to take
-                charge of your well-being.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -79,11 +75,6 @@ const Home = () => {
               <h3 className="font-extrabold text-2xl  text-black">
                 Medical Camp
               </h3>
-              {/* <p className="font-bold text-black">
-                Together, let's fight diseases and promote wellness. Join us at
-                our medical camp and take the first step towards a healthier
-                lifestyle.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -93,10 +84,6 @@ const Home = () => {
               <h3 className="font-extrabold text-2xl  text-black">
                 Medical Camp
               </h3>
-              {/* <p className="font-bold text-black">
-                Your health matters. Join us at our medical camp and prioritize
-                your well-being.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -106,10 +93,6 @@ const Home = () => {
               <h3 className="font-extrabold text-2xl  text-black">
                 Plantation Drive
               </h3>
-              {/* <p className="font-bold text-black">
-                A society grows great when old men plant trees whose shade they
-                know they shall never sit in.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -119,17 +102,12 @@ const Home = () => {
               <h3 className="font-extrabold text-2xl  text-black">
                 Plantation Drive
               </h3>
-              {/* <p className="font-bold text-black">
-                Trees exhale for us so that we can inhale them to stay alive.
-                Can we ever forget that? Let us love trees with every breath we
-                take until we perish.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
-
-      <div >
+      <div>
+        
         {/* Moving content upcoming events */}
         <Marquee
           direction="right"
@@ -170,7 +148,6 @@ const Home = () => {
             />
 
             <div className="p-5">
-              
               <p className="mb-3  font-extrabold  text-lg text-gray-700 dark:text-black">
                 Eye Checking Camp
               </p>
@@ -191,7 +168,6 @@ const Home = () => {
             />
 
             <div className="p-5">
-              
               <p className="mb-3  font-extrabold text-lg text-gray-700 dark:text-black">
                 Medical Awarness
               </p>
@@ -205,15 +181,13 @@ const Home = () => {
           </div>
 
           <div className="max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
-           
-              <img
-                className="rounded-t-lg h-auto overflow-hidden w-full"
-                src="./Upcoming_Events_Photos/women_empowerment.png"
-                alt="women empowerment"
-              />
-           
+            <img
+              className="rounded-t-lg h-auto overflow-hidden w-full"
+              src="./Upcoming_Events_Photos/women_empowerment.png"
+              alt="women empowerment"
+            />
+
             <div className="p-5">
-             
               <p className="mb-3  font-extrabold text-lg text-gray-700 dark:text-black">
                 Women's Empowerment
               </p>
