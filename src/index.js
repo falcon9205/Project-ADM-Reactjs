@@ -7,6 +7,8 @@ import Home from './components/Home/Home';
 import Internship from './components/Internship/Internship'
 import PhotoGallery from './components/PhotoGallery/PhotoGallery'
 import Contactus from './components/Contactus/Contactus'
+import Signup from './components/Login/SignUp'
+import Signin from './components/Login/SignIn'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -29,7 +31,12 @@ const router = createBrowserRouter([
       },{
         path:"Contactus",
         element:<Contactus/>
-
+      },{
+        path:"login",
+        element:<Signin/>
+      },{
+        path:"register",
+        element:<Signup/>
       }
     ]
   }
