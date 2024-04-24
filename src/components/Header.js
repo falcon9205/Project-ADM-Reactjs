@@ -31,7 +31,7 @@ function Header() {
             <NavLink to="/Internship">INTERNSHIPS</NavLink>
             <NavLink to="/PhotoGallery">PHOTOGALLERY</NavLink>
             <NavLink to="/Contactus">CONTACT-US</NavLink>
-            <NavLink to="/Login"><button className="bg-blue-600 px-3 rounded-lg ">LOGIN</button></NavLink>
+            <button className="bg-blue-600 px-3 rounded-lg ">LOGIN</button>
           </Nav>
         </Navbar.Collapse>
       </Container>
