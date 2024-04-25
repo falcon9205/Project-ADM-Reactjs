@@ -34,7 +34,7 @@ const Home = () => {
       <div
         className="h-screen w-full sm:text-4xl font-bold sm:font-extrabold p-10 text-white/75 font-mono text-center"
         style={{
-          backgroundImage: `url("https://rare-gallery.com/uploads/posts/545420-begging-child.jpg")`,
+          backgroundImage: `url('./HomeGalleryImages/frstpic.jpg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
@@ -121,10 +121,10 @@ const Home = () => {
 
         {/* upcoming events holder div */}
         <div className="sm:flex gap-4 w-full  p-2 bg-black justify-center ">
-          <div className="max-w-sm rounded-lg bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4">
+          <div className="max-w-sm rounded-lg bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 m-4">
             <img
-              className="rounded-t-lg h-auto overflow-hidden w-full"
-              src="./Upcoming_Events_Photos/imglogo.png"
+              className="rounded-t-lg h-[62%] overflow-hidden w-full"
+              src="./Upcoming_Events_Photos/Tbcamp.jpg"
               alt="tb"
             />
 
@@ -140,10 +140,11 @@ const Home = () => {
               </button>
             </div>
           </div>
+
           <div className="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
             <img
-              className="rounded-t-lg h-auto overflow-hidden w-full"
-              src="./Upcoming_Events_Photos/eye.png"
+              className="rounded-t-lg h-11/12 overflow-hidden w-full"
+              src="./Upcoming_Events_Photos/eyecamp.jpg"
               alt="eye"
             />
 
@@ -162,8 +163,8 @@ const Home = () => {
 
           <div className="max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
             <img
-              className="rounded-t-lg h-auto overflow-hidden w-full"
-              src="./Upcoming_Events_Photos/medical_awareness.png"
+              className="rounded-t-lg h-[61%] overflow-hidden w-full"
+              src="./Upcoming_Events_Photos/medical_awarenesscamp.jpg"
               alt="medical awaremenss"
             />
 
@@ -182,8 +183,8 @@ const Home = () => {
 
           <div className="max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 m-4 rounded-lg">
             <img
-              className="rounded-t-lg h-auto overflow-hidden w-full"
-              src="./Upcoming_Events_Photos/women_empowerment.png"
+              className="rounded-t-lg h-[61%] overflow-hidden w-full"
+              src="./Upcoming_Events_Photos/women_empowermentcamp.jpg"
               alt="women empowerment"
             />
 
